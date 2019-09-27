@@ -1,0 +1,12 @@
+<!-- templates/home.html -->
+
+{% extends 'base.html' %}
+
+{% block content %}
+  <a href="{{url_for('home')}}"><button class="btn button-info">Back</button></a>
+  <h1>Product</h1>
+  {{product.name}}<br/>
+  {{product.description}}<br/>
+  {{product.id}}<br/>
+
+{% endblock %}
